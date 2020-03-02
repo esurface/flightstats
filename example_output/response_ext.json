@@ -1,0 +1,729 @@
+{
+ "request": {
+  "endpoint": "ByAirportByDeparture",
+  "departureAirport": {
+   "requested": "PEK",
+   "interpreted": "PEK"
+  },
+  "year": {
+   "requested": "2020",
+   "interpreted": 2020
+  },
+  "month": {
+   "requested": "01",
+   "interpreted": 1
+  },
+  "day": {
+   "requested": "23",
+   "interpreted": 23
+  },
+  "hour": {
+   "requested": "0",
+   "interpreted": 0
+  },
+  "isUtc": {
+   "requested": "false",
+   "interpreted": false
+  },
+  "codeType": {
+   "requested": "IATA",
+   "interpreted": "IATA"
+  },
+  "numHours": {
+   "requested": "1",
+   "interpreted": 1
+  },
+  "maxFlights": {
+   "requested": "5",
+   "interpreted": 5
+  },
+  "url": "https://api.flightstats.com/flex/flightstatus/historical/rest/v3/json/airport/status/PEK/dep/2020/01/23/0?codeType=IATA&utc=false&maxFlights=5&numHours=1",
+  "nonstopOnly": {
+   "interpreted": false
+  }
+ },
+ "flightStatuses": [
+  {
+   "flightId": 1028835382,
+   "carrierFsCode": "O3",
+   "operatingCarrierFsCode": "O3",
+   "primaryCarrierFsCode": "O3",
+   "flightNumber": "6871",
+   "departureAirportFsCode": "PEK",
+   "arrivalAirportFsCode": "CAN",
+   "departureDate": {
+    "dateUtc": "2020-01-22T16:10:00.000Z",
+    "dateLocal": "2020-01-23T00:10:00.000"
+   },
+   "arrivalDate": {
+    "dateUtc": "2020-01-22T19:50:00.000Z",
+    "dateLocal": "2020-01-23T03:50:00.000"
+   },
+   "status": "U",
+   "schedule": {
+    "flightType": "F",
+    "serviceClasses": "",
+    "restrictions": "",
+    "uplines": [],
+    "downlines": []
+   },
+   "operationalTimes": {
+    "publishedDeparture": {
+     "dateUtc": "2020-01-22T16:10:00.000Z",
+     "dateLocal": "2020-01-23T00:10:00.000"
+    },
+    "scheduledGateDeparture": {
+     "dateUtc": "2020-01-22T16:10:00.000Z",
+     "dateLocal": "2020-01-23T00:10:00.000"
+    },
+    "publishedArrival": {
+     "dateUtc": "2020-01-22T19:50:00.000Z",
+     "dateLocal": "2020-01-23T03:50:00.000"
+    },
+    "scheduledGateArrival": {
+     "dateUtc": "2020-01-22T19:50:00.000Z",
+     "dateLocal": "2020-01-23T03:50:00.000"
+    }
+   },
+   "codeshares": [],
+   "delays": {},
+   "flightDurations": {
+    "scheduledBlockMinutes": 220
+   },
+   "airportResources": {},
+   "flightEquipment": {
+    "scheduledEquipmentIataCode": "73F"
+   },
+   "irregularOperations": []
+  },
+  {
+   "flightId": 1028829767,
+   "carrierFsCode": "MS",
+   "operatingCarrierFsCode": "MS",
+   "primaryCarrierFsCode": "MS",
+   "flightNumber": "956",
+   "departureAirportFsCode": "PEK",
+   "arrivalAirportFsCode": "CAI",
+   "departureDate": {
+    "dateUtc": "2020-01-22T16:30:00.000Z",
+    "dateLocal": "2020-01-23T00:30:00.000"
+   },
+   "arrivalDate": {
+    "dateUtc": "2020-01-23T03:45:00.000Z",
+    "dateLocal": "2020-01-23T05:45:00.000"
+   },
+   "status": "L",
+   "schedule": {
+    "flightType": "J",
+    "serviceClasses": "RJY",
+    "restrictions": "",
+    "uplines": [],
+    "downlines": []
+   },
+   "operationalTimes": {
+    "publishedDeparture": {
+     "dateUtc": "2020-01-22T16:30:00.000Z",
+     "dateLocal": "2020-01-23T00:30:00.000"
+    },
+    "scheduledGateDeparture": {
+     "dateUtc": "2020-01-22T16:30:00.000Z",
+     "dateLocal": "2020-01-23T00:30:00.000"
+    },
+    "estimatedGateDeparture": {
+     "dateUtc": "2020-01-22T16:11:00.000Z",
+     "dateLocal": "2020-01-23T00:11:00.000"
+    },
+    "actualGateDeparture": {
+     "dateUtc": "2020-01-22T16:11:00.000Z",
+     "dateLocal": "2020-01-23T00:11:00.000"
+    },
+    "estimatedRunwayDeparture": {
+     "dateUtc": "2020-01-22T16:41:00.000Z",
+     "dateLocal": "2020-01-23T00:41:00.000"
+    },
+    "actualRunwayDeparture": {
+     "dateUtc": "2020-01-22T16:41:00.000Z",
+     "dateLocal": "2020-01-23T00:41:00.000"
+    },
+    "publishedArrival": {
+     "dateUtc": "2020-01-23T03:45:00.000Z",
+     "dateLocal": "2020-01-23T05:45:00.000"
+    },
+    "scheduledGateArrival": {
+     "dateUtc": "2020-01-23T03:45:00.000Z",
+     "dateLocal": "2020-01-23T05:45:00.000"
+    },
+    "estimatedGateArrival": {
+     "dateUtc": "2020-01-23T03:24:00.000Z",
+     "dateLocal": "2020-01-23T05:24:00.000"
+    },
+    "actualGateArrival": {
+     "dateUtc": "2020-01-23T03:24:00.000Z",
+     "dateLocal": "2020-01-23T05:24:00.000"
+    },
+    "estimatedRunwayArrival": {
+     "dateUtc": "2020-01-23T03:16:00.000Z",
+     "dateLocal": "2020-01-23T05:16:00.000"
+    },
+    "actualRunwayArrival": {
+     "dateUtc": "2020-01-23T03:16:00.000Z",
+     "dateLocal": "2020-01-23T05:16:00.000"
+    }
+   },
+   "codeshares": [
+    {
+     "fsCode": "CA",
+     "flightNumber": "5081",
+     "relationship": "L"
+    }
+   ],
+   "delays": {},
+   "flightDurations": {
+    "scheduledBlockMinutes": 675,
+    "blockMinutes": 673,
+    "airMinutes": 635,
+    "taxiOutMinutes": 30,
+    "taxiInMinutes": 8
+   },
+   "airportResources": {
+    "departureTerminal": "3",
+    "arrivalTerminal": "T3"
+   },
+   "flightEquipment": {
+    "scheduledEquipmentIataCode": "77W",
+    "actualEquipmentIataCode": "77W",
+    "tailNumber": "SU-GDO"
+   },
+   "irregularOperations": []
+  },
+  {
+   "flightId": 1028794259,
+   "carrierFsCode": "CZ",
+   "operatingCarrierFsCode": "CZ",
+   "primaryCarrierFsCode": "CZ",
+   "flightNumber": "345",
+   "departureAirportFsCode": "PEK",
+   "arrivalAirportFsCode": "AMS",
+   "departureDate": {
+    "dateUtc": "2020-01-22T16:30:00.000Z",
+    "dateLocal": "2020-01-23T00:30:00.000"
+   },
+   "arrivalDate": {
+    "dateUtc": "2020-01-23T03:40:00.000Z",
+    "dateLocal": "2020-01-23T04:40:00.000"
+   },
+   "status": "L",
+   "schedule": {
+    "flightType": "J",
+    "serviceClasses": "RFJY",
+    "restrictions": "",
+    "uplines": [],
+    "downlines": []
+   },
+   "operationalTimes": {
+    "publishedDeparture": {
+     "dateUtc": "2020-01-22T16:30:00.000Z",
+     "dateLocal": "2020-01-23T00:30:00.000"
+    },
+    "scheduledGateDeparture": {
+     "dateUtc": "2020-01-22T16:30:00.000Z",
+     "dateLocal": "2020-01-23T00:30:00.000"
+    },
+    "estimatedGateDeparture": {
+     "dateUtc": "2020-01-22T16:13:00.000Z",
+     "dateLocal": "2020-01-23T00:13:00.000"
+    },
+    "actualGateDeparture": {
+     "dateUtc": "2020-01-22T16:13:00.000Z",
+     "dateLocal": "2020-01-23T00:13:00.000"
+    },
+    "estimatedRunwayDeparture": {
+     "dateUtc": "2020-01-22T16:43:00.000Z",
+     "dateLocal": "2020-01-23T00:43:00.000"
+    },
+    "actualRunwayDeparture": {
+     "dateUtc": "2020-01-22T16:43:00.000Z",
+     "dateLocal": "2020-01-23T00:43:00.000"
+    },
+    "publishedArrival": {
+     "dateUtc": "2020-01-23T03:40:00.000Z",
+     "dateLocal": "2020-01-23T04:40:00.000"
+    },
+    "scheduledGateArrival": {
+     "dateUtc": "2020-01-23T03:40:00.000Z",
+     "dateLocal": "2020-01-23T04:40:00.000"
+    },
+    "estimatedGateArrival": {
+     "dateUtc": "2020-01-23T03:08:00.000Z",
+     "dateLocal": "2020-01-23T04:08:00.000"
+    },
+    "actualGateArrival": {
+     "dateUtc": "2020-01-23T03:08:00.000Z",
+     "dateLocal": "2020-01-23T04:08:00.000"
+    },
+    "estimatedRunwayArrival": {
+     "dateUtc": "2020-01-23T03:00:00.000Z",
+     "dateLocal": "2020-01-23T04:00:00.000"
+    },
+    "actualRunwayArrival": {
+     "dateUtc": "2020-01-23T03:00:00.000Z",
+     "dateLocal": "2020-01-23T04:00:00.000"
+    }
+   },
+   "codeshares": [
+    {
+     "fsCode": "KL",
+     "flightNumber": "4302",
+     "relationship": "L"
+    },
+    {
+     "fsCode": "MF",
+     "flightNumber": "9245",
+     "relationship": "L"
+    }
+   ],
+   "delays": {},
+   "flightDurations": {
+    "scheduledBlockMinutes": 670,
+    "blockMinutes": 655,
+    "airMinutes": 617,
+    "taxiOutMinutes": 30,
+    "taxiInMinutes": 8
+   },
+   "airportResources": {
+    "departureTerminal": "2",
+    "arrivalTerminal": "2"
+   },
+   "flightEquipment": {
+    "scheduledEquipmentIataCode": "330",
+    "actualEquipmentIataCode": "333",
+    "tailNumber": "B-8361"
+   },
+   "irregularOperations": []
+  },
+  {
+   "flightId": 1028835343,
+   "carrierFsCode": "O3",
+   "operatingCarrierFsCode": "O3",
+   "primaryCarrierFsCode": "O3",
+   "flightNumber": "6909",
+   "departureAirportFsCode": "PEK",
+   "arrivalAirportFsCode": "SZX",
+   "departureDate": {
+    "dateUtc": "2020-01-22T16:40:00.000Z",
+    "dateLocal": "2020-01-23T00:40:00.000"
+   },
+   "arrivalDate": {
+    "dateUtc": "2020-01-22T20:20:00.000Z",
+    "dateLocal": "2020-01-23T04:20:00.000"
+   },
+   "status": "U",
+   "schedule": {
+    "flightType": "F",
+    "serviceClasses": "",
+    "restrictions": "",
+    "uplines": [],
+    "downlines": []
+   },
+   "operationalTimes": {
+    "publishedDeparture": {
+     "dateUtc": "2020-01-22T16:40:00.000Z",
+     "dateLocal": "2020-01-23T00:40:00.000"
+    },
+    "scheduledGateDeparture": {
+     "dateUtc": "2020-01-22T16:40:00.000Z",
+     "dateLocal": "2020-01-23T00:40:00.000"
+    },
+    "publishedArrival": {
+     "dateUtc": "2020-01-22T20:20:00.000Z",
+     "dateLocal": "2020-01-23T04:20:00.000"
+    },
+    "scheduledGateArrival": {
+     "dateUtc": "2020-01-22T20:20:00.000Z",
+     "dateLocal": "2020-01-23T04:20:00.000"
+    }
+   },
+   "codeshares": [],
+   "delays": {},
+   "flightDurations": {
+    "scheduledBlockMinutes": 220
+   },
+   "airportResources": {},
+   "flightEquipment": {
+    "scheduledEquipmentIataCode": "73F"
+   },
+   "irregularOperations": []
+  },
+  {
+   "flightId": 1028792415,
+   "carrierFsCode": "CA",
+   "operatingCarrierFsCode": "CA",
+   "primaryCarrierFsCode": "CA",
+   "flightNumber": "907",
+   "departureAirportFsCode": "PEK",
+   "arrivalAirportFsCode": "MAD",
+   "departureDate": {
+    "dateUtc": "2020-01-22T17:10:00.000Z",
+    "dateLocal": "2020-01-23T01:10:00.000"
+   },
+   "arrivalDate": {
+    "dateUtc": "2020-01-23T05:10:00.000Z",
+    "dateLocal": "2020-01-23T06:10:00.000"
+   },
+   "status": "L",
+   "schedule": {
+    "flightType": "J",
+    "serviceClasses": "RFJY",
+    "restrictions": "",
+    "uplines": [],
+    "downlines": [
+     {
+      "fsCode": "GRU",
+      "flightId": 1028792418
+     }
+    ]
+   },
+   "operationalTimes": {
+    "publishedDeparture": {
+     "dateUtc": "2020-01-22T17:10:00.000Z",
+     "dateLocal": "2020-01-23T01:10:00.000"
+    },
+    "scheduledGateDeparture": {
+     "dateUtc": "2020-01-22T17:10:00.000Z",
+     "dateLocal": "2020-01-23T01:10:00.000"
+    },
+    "estimatedGateDeparture": {
+     "dateUtc": "2020-01-22T16:51:00.000Z",
+     "dateLocal": "2020-01-23T00:51:00.000"
+    },
+    "actualGateDeparture": {
+     "dateUtc": "2020-01-22T16:51:00.000Z",
+     "dateLocal": "2020-01-23T00:51:00.000"
+    },
+    "estimatedRunwayDeparture": {
+     "dateUtc": "2020-01-22T17:21:00.000Z",
+     "dateLocal": "2020-01-23T01:21:00.000"
+    },
+    "actualRunwayDeparture": {
+     "dateUtc": "2020-01-22T17:21:00.000Z",
+     "dateLocal": "2020-01-23T01:21:00.000"
+    },
+    "publishedArrival": {
+     "dateUtc": "2020-01-23T05:10:00.000Z",
+     "dateLocal": "2020-01-23T06:10:00.000"
+    },
+    "scheduledGateArrival": {
+     "dateUtc": "2020-01-23T05:10:00.000Z",
+     "dateLocal": "2020-01-23T06:10:00.000"
+    },
+    "estimatedGateArrival": {
+     "dateUtc": "2020-01-23T05:03:00.000Z",
+     "dateLocal": "2020-01-23T06:03:00.000"
+    },
+    "actualGateArrival": {
+     "dateUtc": "2020-01-23T05:03:00.000Z",
+     "dateLocal": "2020-01-23T06:03:00.000"
+    },
+    "estimatedRunwayArrival": {
+     "dateUtc": "2020-01-23T04:43:00.000Z",
+     "dateLocal": "2020-01-23T05:43:00.000"
+    },
+    "actualRunwayArrival": {
+     "dateUtc": "2020-01-23T04:43:00.000Z",
+     "dateLocal": "2020-01-23T05:43:00.000"
+    }
+   },
+   "codeshares": [
+    {
+     "fsCode": "LA",
+     "flightNumber": "8773",
+     "relationship": "L"
+    }
+   ],
+   "delays": {},
+   "flightDurations": {
+    "scheduledBlockMinutes": 720,
+    "blockMinutes": 732,
+    "airMinutes": 682,
+    "taxiOutMinutes": 30,
+    "taxiInMinutes": 20
+   },
+   "airportResources": {
+    "departureTerminal": "3",
+    "arrivalTerminal": "1",
+    "baggage": "04"
+   },
+   "flightEquipment": {
+    "scheduledEquipmentIataCode": "789",
+    "actualEquipmentIataCode": "789",
+    "tailNumber": "B-7898"
+   },
+   "irregularOperations": []
+  }
+ ],
+ "appendix": {
+  "airlines": [
+   {
+    "fs": "KL",
+    "iata": "KL",
+    "icao": "KLM",
+    "name": "KLM",
+    "phoneNumber": "1-800-447-4747",
+    "active": true,
+    "category": "I"
+   },
+   {
+    "fs": "O3",
+    "iata": "O3",
+    "icao": "CSS",
+    "name": "SF Airlines",
+    "active": true,
+    "category": "C"
+   },
+   {
+    "fs": "LA",
+    "iata": "LA",
+    "icao": "LAN",
+    "name": "LATAM Airlines",
+    "phoneNumber": "1 (305) 670 9999",
+    "active": true,
+    "category": "I"
+   },
+   {
+    "fs": "MS",
+    "iata": "MS",
+    "icao": "MSR",
+    "name": "EgyptAir",
+    "phoneNumber": "+20 090070000",
+    "active": true,
+    "category": "I"
+   },
+   {
+    "fs": "CZ",
+    "iata": "CZ",
+    "icao": "CSN",
+    "name": "China Southern Airlines",
+    "phoneNumber": "+86 20 95539",
+    "active": true,
+    "category": "I"
+   },
+   {
+    "fs": "MF",
+    "iata": "MF",
+    "icao": "CXA",
+    "name": "Xiamen Airlines",
+    "phoneNumber": "+86-592-5739888",
+    "active": true,
+    "category": "I"
+   },
+   {
+    "fs": "CA",
+    "iata": "CA",
+    "icao": "CCA",
+    "name": "Air China LTD",
+    "phoneNumber": "1-800-986-1985",
+    "active": true,
+    "category": "I"
+   }
+  ],
+  "airports": [
+   {
+    "fs": "SZX",
+    "iata": "SZX",
+    "icao": "ZGSZ",
+    "faa": "",
+    "name": "Shenzhen Bao'an International Airport",
+    "street1": "Airport 9th Rd",
+    "city": "Shenzhen",
+    "cityCode": "SZX",
+    "countryCode": "CN",
+    "district": "Bao'an",
+    "countryName": "China",
+    "regionName": "Asia",
+    "timeZoneRegionName": "Asia/Shanghai",
+    "weatherZone": "",
+    "localTime": "2020-02-11T07:18:53.238",
+    "utcOffsetHours": 8,
+    "latitude": 22.639444,
+    "longitude": 113.810833,
+    "elevationFeet": 13,
+    "classification": 1,
+    "active": true
+   },
+   {
+    "fs": "MAD",
+    "iata": "MAD",
+    "icao": "LEMD",
+    "faa": "",
+    "name": "Adolfo Suarez Madrid-Barajas Airport",
+    "city": "Madrid",
+    "cityCode": "MAD",
+    "stateCode": "SP",
+    "countryCode": "ES",
+    "countryName": "Spain and Canary Islands",
+    "regionName": "Europe",
+    "timeZoneRegionName": "Europe/Madrid",
+    "weatherZone": "",
+    "localTime": "2020-02-11T00:18:53.238",
+    "utcOffsetHours": 1,
+    "latitude": 40.49027,
+    "longitude": -3.564479,
+    "elevationFeet": 1953,
+    "classification": 1,
+    "active": true
+   },
+   {
+    "fs": "CAN",
+    "iata": "CAN",
+    "icao": "ZGGG",
+    "faa": "",
+    "name": "Guangzhou Baiyun International Airport",
+    "street1": "Airport W Ave",
+    "city": "Guangzhou",
+    "cityCode": "CAN",
+    "countryCode": "CN",
+    "district": "Huadu",
+    "countryName": "China",
+    "regionName": "Asia",
+    "timeZoneRegionName": "Asia/Shanghai",
+    "weatherZone": "",
+    "localTime": "2020-02-11T07:18:53.238",
+    "utcOffsetHours": 8,
+    "latitude": 23.387862,
+    "longitude": 113.29734,
+    "elevationFeet": 36,
+    "classification": 1,
+    "active": true
+   },
+   {
+    "fs": "PEK",
+    "iata": "PEK",
+    "icao": "ZBAA",
+    "faa": "",
+    "name": "Beijing Capital International Airport",
+    "street1": "Capital Airport Rd",
+    "city": "Beijing",
+    "cityCode": "BJS",
+    "countryCode": "CN",
+    "district": "Chaoyang",
+    "countryName": "China",
+    "regionName": "Asia",
+    "timeZoneRegionName": "Asia/Shanghai",
+    "weatherZone": "",
+    "localTime": "2020-02-11T07:18:53.238",
+    "utcOffsetHours": 8,
+    "latitude": 40.078538,
+    "longitude": 116.587095,
+    "elevationFeet": 115,
+    "classification": 1,
+    "active": true
+   },
+   {
+    "fs": "AMS",
+    "iata": "AMS",
+    "icao": "EHAM",
+    "faa": "",
+    "name": "Amsterdam Airport Schiphol",
+    "city": "Amsterdam",
+    "cityCode": "AMS",
+    "countryCode": "NL",
+    "countryName": "Netherlands",
+    "regionName": "Europe",
+    "timeZoneRegionName": "Europe/Amsterdam",
+    "weatherZone": "",
+    "localTime": "2020-02-11T00:18:53.238",
+    "utcOffsetHours": 1,
+    "latitude": 52.309069,
+    "longitude": 4.763385,
+    "elevationFeet": -11,
+    "classification": 1,
+    "active": true
+   },
+   {
+    "fs": "CAI",
+    "iata": "CAI",
+    "icao": "HECA",
+    "faa": "",
+    "name": "Cairo International Airport",
+    "city": "Cairo",
+    "cityCode": "CAI",
+    "countryCode": "EG",
+    "countryName": "Egypt",
+    "regionName": "Middle East",
+    "timeZoneRegionName": "Africa/Cairo",
+    "weatherZone": "",
+    "localTime": "2020-02-11T01:18:53.238",
+    "utcOffsetHours": 2,
+    "latitude": 30.120106,
+    "longitude": 31.406469,
+    "elevationFeet": 382,
+    "classification": 2,
+    "active": true
+   },
+   {
+    "fs": "GRU",
+    "iata": "GRU",
+    "icao": "SBGR",
+    "faa": "",
+    "name": "Sao Paulo-Guarulhos International Airport",
+    "city": "Sao Paulo",
+    "cityCode": "SAO",
+    "stateCode": "SP",
+    "countryCode": "BR",
+    "countryName": "Brazil",
+    "regionName": "South America",
+    "timeZoneRegionName": "America/Sao_Paulo",
+    "weatherZone": "",
+    "localTime": "2020-02-10T20:18:53.238",
+    "utcOffsetHours": -3,
+    "latitude": -23.425668,
+    "longitude": -46.481926,
+    "elevationFeet": 2459,
+    "classification": 1,
+    "active": true
+   }
+  ],
+  "equipments": [
+   {
+    "iata": "330",
+    "name": "Airbus A330",
+    "turboProp": false,
+    "jet": true,
+    "widebody": true,
+    "regional": false
+   },
+   {
+    "iata": "333",
+    "name": "Airbus A330-300",
+    "turboProp": false,
+    "jet": true,
+    "widebody": true,
+    "regional": false
+   },
+   {
+    "iata": "77W",
+    "name": "Boeing 777-300ER",
+    "turboProp": false,
+    "jet": true,
+    "widebody": true,
+    "regional": false
+   },
+   {
+    "iata": "789",
+    "name": "Boeing 787-9",
+    "turboProp": false,
+    "jet": true,
+    "widebody": true,
+    "regional": false
+   },
+   {
+    "iata": "73F",
+    "name": "Boeing 737 Freighter",
+    "turboProp": false,
+    "jet": true,
+    "widebody": false,
+    "regional": false
+   }
+  ]
+ }
+}

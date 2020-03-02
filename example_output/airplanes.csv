@@ -1,0 +1,19 @@
+iata,name,turboProp,jet,widebody,regional
+320,Airbus A320,False,True,False,False
+332,Airbus A330-200,False,True,True,False
+741,Boeing 747-100 Passenger,False,True,True,False
+788,Boeing 787-8,False,True,True,False
+789,Boeing 787-9,False,True,True,False
+74F,Boeing 747 Freighter,False,True,True,False
+73F,Boeing 737 Freighter,False,True,False,False
+73Y,Boeing 737-300 Freighter,False,True,False,False
+739,Boeing 737-900 Passenger,False,True,False,False
+32F,Airbus A320 Freighter,False,True,False,False
+73C,Boeing 737-300 (winglets) Passenger,False,True,False,False
+319,Airbus A319,False,True,False,False
+737,Boeing 737 Passenger,False,True,False,False
+738,Boeing 737-800 Passenger,False,True,False,False
+73H,Boeing 737-800 (winglets) Passenger/BBJ2,False,True,False,False
+330,Airbus A330,False,True,True,False
+32A,Airbus A320 (sharklets),False,True,False,False
+CR9,Canadair (Bombardier) Regional Jet 900 and Challenger 890,False,True,False,True

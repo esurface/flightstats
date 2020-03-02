@@ -1,0 +1,48 @@
+iata,name,turboProp,jet,widebody,regional
+32A,Airbus A320 (sharklets),False,True,False,False
+32B,Airbus A321 (sharklets),False,True,False,False
+74F,Boeing 747 Freighter,False,True,True,False
+32N,Airbus A320neo,False,True,False,False
+330,Airbus A330,False,True,True,False
+74N,Boeing 747-8F Freighter,False,True,True,False
+772,Boeing 777-200 / 200ER,False,True,True,False
+332,Airbus A330-200,False,True,True,False
+32Q,Airbus A321neo,False,True,False,False
+333,Airbus A330-300,False,True,True,False
+773,Boeing 777-300,False,True,True,False
+359,Airbus A350-900,False,True,True,False
+76W,Boeing 767-300 (winglets) Passenger,False,True,True,False
+319,Airbus A319,False,True,False,False
+737,Boeing 737 Passenger,False,True,False,False
+738,Boeing 737-800 Passenger,False,True,False,False
+75F,Boeing 757-200 Freighter,False,True,False,False
+73F,Boeing 737 Freighter,False,True,False,False
+73H,Boeing 737-800 (winglets) Passenger/BBJ2,False,True,False,False
+781,Boeing 787-10,False,True,True,False
+320,Airbus A320,False,True,False,False
+321,Airbus A321,False,True,False,False
+343,Airbus A340-300,False,True,True,False
+763,Boeing 767-300 Passenger,False,True,True,False
+73P,Boeing 737-400 Freighter,False,True,False,False
+77W,Boeing 777-300ER,False,True,True,False
+789,Boeing 787-9,False,True,True,False
+73W,Boeing 737-700 (winglets) Passenger/BBJ1,False,True,False,False
+73Y,Boeing 737-300 Freighter,False,True,False,False
+74H,Boeing 747-8 Passenger,False,True,True,False
+350,Airbus A350,False,True,True,False
+32S,Airbus A318 / A319 / A320 / A321,False,True,False,False
+733,Boeing 737-300 Passenger,False,True,False,False
+739,Boeing 737-900 Passenger,False,True,False,False
+31B,Airbus A319 (sharklets),False,True,False,False
+73G,Boeing 737-700 Passenger,False,True,False,False
+380,Airbus A380 Passenger,False,True,True,False
+388,Airbus A380-800 Passenger,False,True,True,False
+787,Boeing 787,False,True,True,False
+788,Boeing 787-8,False,True,True,False
+744,Boeing 747-400 Passenger,False,True,True,False
+747,Boeing 747 Passenger,False,True,True,False
+777,Boeing 777,False,True,True,False
+77F,Boeing 777 Freighter,False,True,True,False
+77X,Boeing 777-200F Freighter,False,True,True,False
+ABY,Airbus A300-600 Freighter,False,True,True,False
+73N,Boeing 737-300 Mixed Configuration,False,True,False,False
