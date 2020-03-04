@@ -99,7 +99,8 @@ if __name__ == '__main__':
             if appendix:
                 airport_data.extend(appendix.get('airports', None))
                 airplane_data.extend(appendix.get('equipments', None))
-        except FlightstatsError:
+        except FlightstatsError as e:
+            print(e)
             break
 
     if not flight_data:
@@ -123,10 +124,11 @@ if __name__ == '__main__':
         flight_df = pandas.json_normalize(flight_data_uniq)
         airplane_df = pandas.json_normalize(airplanes_data_uniq)
         airport_df = pandas.json_normalize(airport_data_uniq)
-
+        
         # add the departure airport info to flight data
         pdf = flight_df.merge(airport_df, left_on='departureAirportFsCode', right_on='fs')
-        flight_df['depLatLon'] = pdf.agg('{0[latitude]},{0[longitude]}'.format, axis=1)
+        flight_df['depLatitue'] = pdf['latitude']
+        flight_df['depLongitude'] = pdf['longitude']
         flight_df['depAirportName'] = pdf['name']
         flight_df['depCity'] = pdf['city']
         flight_df['depCountryCode'] = pdf['countryCode']
@@ -135,7 +137,8 @@ if __name__ == '__main__':
 
         # add the arrival lat,lon column to flight data
         pdf = flight_df.merge(airport_df, left_on='arrivalAirportFsCode', right_on='fs')
-        flight_df['arrLatLon'] = pdf.agg('{0[latitude]},{0[longitude]}'.format, axis=1)
+        flight_df['arrLatitue'] = pdf['latitude']
+        flight_df['arrLongitude'] = pdf['longitude']
         flight_df['arrAirportName'] = pdf['name']
         flight_df['arrCity'] = pdf['city']
         flight_df['arrCountryCode'] = pdf['countryCode']

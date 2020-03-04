@@ -35,7 +35,7 @@ class RunSet(object):
                                               departure_date.strftime('%Y-%m-%d')))
 
         
-        lock = RateLimiter(max_messages=60, every_seconds=60)
+        lock = RateLimiter(max_messages=4, every_seconds=10)
         self.client = FlightstatsAPI(api_key, api_id, rate_limit_lock=lock)
 
 def get_iata_codes(csv_file_name):
@@ -70,7 +70,8 @@ def output_flight_data(runset, flight_data, airport_data, airplane_data):
 
         # add the departure airport info to flight data
         pdf = flight_df.merge(airport_df, left_on='departureAirportFsCode', right_on='fs')
-        flight_df['depLatLon'] = pdf.agg('{0[latitude]},{0[longitude]}'.format, axis=1)
+        flight_df['depLatitue'] = pdf['latitude']
+        flight_df['depLongitude'] = pdf['longitude']
         flight_df['depAirportName'] = pdf['name']
         flight_df['depCity'] = pdf['city']
         flight_df['depCountryCode'] = pdf['countryCode']
@@ -79,7 +80,8 @@ def output_flight_data(runset, flight_data, airport_data, airplane_data):
 
         # add the arrival airport info to flight data
         pdf = flight_df.merge(airport_df, left_on='arrivalAirportFsCode', right_on='fs')
-        flight_df['arrLatLon'] = pdf.agg('{0[latitude]},{0[longitude]}'.format, axis=1)
+        flight_df['arrLatitue'] = pdf['latitude']
+        flight_df['arrLongitude'] = pdf['longitude']
         flight_df['arrAirportName'] = pdf['name']
         flight_df['arrCity'] = pdf['city']
         flight_df['arrCountryCode'] = pdf['countryCode']
@@ -94,12 +96,12 @@ def output_flight_data(runset, flight_data, airport_data, airplane_data):
         csv_filename = ("airports_%s.csv" %
                         (os.path.basename(runset.output_filename)))
         path = os.path.join(runset.output_dir, csv_filename)
-        pdf.to_csv(path, index=False)
+        airport_df.to_csv(path, index=False)
 
         csv_filename = ("airplanes_%s.csv" %
                         (os.path.basename(runset.output_filename)))
         path = os.path.join(runset.output_dir, csv_filename)
-        pdf.to_csv(path, index=False)
+        airplane_df.to_csv(path, index=False)
 
 def run(runset):
     params = {
@@ -150,7 +152,7 @@ def run_with_args():
 
     results=[]
     if THREADED:
-        results = ThreadPool(10).imap_unordered(run, runset_list)
+        results = ThreadPool(8).imap_unordered(run, runset_list)
     else:
         for runset in runset_list:
             results.append(run(runset))
